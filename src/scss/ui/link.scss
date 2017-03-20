@@ -1,0 +1,253 @@
+
+.link {
+    display: inline-block;
+}
+
+.link-inline {
+    font: inherit;
+    line-height: inherit;
+    text-decoration: underline;
+}
+
+.link-underline, .link-underline:active, .link-underline:focus {
+    text-decoration: underline;
+}
+
+.link-underline:hover {
+    text-decoration: none;
+}
+
+.link-circle {
+    border-radius: 50%;
+}
+
+.link-circle .icon,
+.link-circle .icon:before {
+    position: static;
+}
+
+.link-bold {
+    font: 700 16px/22px "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.link-group {
+    white-space: nowrap;
+}
+
+.link-group * {
+    vertical-align: middle;
+}
+
+.link-group span {
+    display: inline-block;
+}
+
+.link-group span + *,
+.link-group * + span {
+    margin-left: 5px;
+}
+
+.link-group.link-group-animated .icon {
+    position: relative;
+    right: 0;
+    transition: .22s;
+}
+
+.link-group.link-group-animated:hover .icon {
+    right: -5px;
+}
+
+.link-group-baseline * {
+    vertical-align: baseline;
+}
+
+.link-icon, .link-icon * {
+    vertical-align: middle;
+}
+
+.link-icon .icon {
+    margin-right: 5px;
+}
+
+.link-icon-mod .icon {
+    position: relative;
+    top: -3px;
+}
+
+.link-image img {
+    width: auto;
+    transition: .44s all ease;
+    opacity: .5;
+}
+
+.link-image:hover img {
+    opacity: 1;
+}
+
+.link-image-wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 126px;
+}
+
+* + .link-image-wrap {
+    margin-top: 13px;
+}
+
+.page .link-primary-inline {
+    color: #000;
+}
+
+.page .link-primary-inline.active, .page .link-primary-inline:active, .page .link-primary-inline:focus {
+    color: #9b9b9b;
+}
+
+.page .link-primary-inline.hover, .page .link-primary-inline:hover {
+    color: #42b294;
+}
+
+.page .link-default, .page .link-default:active, .page .link-default:focus {
+    color: #9f9f9f;
+}
+
+.page .link-default:hover {
+    color: #000;
+}
+
+.page .link-primary, .page .link-primary:active, .page .link-primary:focus {
+    color: #000;
+}
+
+.page .link-primary:hover {
+    color: #00030a;
+}
+
+.page .link-primary-inverse, .page .link-primary-inverse:active, .page .link-primary-inverse:focus {
+    color: #000;
+}
+
+.page .link-primary-inverse:hover {
+    color: #ddd;
+}
+
+.page .link-primary-inverse-v2, .page .link-primary-inverse-v2:active, .page .link-primary-inverse-v2:focus {
+    color: #000;
+}
+
+.page .link-primary-inverse-v2:hover {
+    color: #fff;
+}
+
+.page .link-secondary, .page .link-secondary:active, .page .link-secondary:focus {
+    color: #00030a;
+}
+
+.page .link-secondary:hover {
+    color: #000;
+}
+
+.page .link-tundora, .page .link-tundora:active, .page .link-tundora:focus {
+    color: #414141;
+}
+
+.page .link-tundora:hover {
+    color: #000;
+}
+
+.page .link-tundora-inverse, .page .link-tundora-inverse:active, .page .link-tundora-inverse:focus {
+    color: #414141;
+}
+
+.page .link-tundora-inverse:hover {
+    color: #fff;
+}
+
+.page .link-secondary, .page .link-secondary:active, .page .link-secondary:focus {
+    color: #000;
+}
+
+.page .link-secondary:hover {
+    color: #000;
+}
+
+.page .link-gray-light, .page .link-gray-light:active, .page .link-gray-light:focus {
+    color: #dedede;
+}
+
+.page .link-gray-light:hover {
+    color: #000;
+}
+
+.page .link-white, .page .link-white:active, .page .link-white:focus {
+    color: #fff;
+}
+
+.page .link-white:hover {
+    color: #000;
+}
+
+.page .link-white-v2, .page .link-white-v2:active, .page .link-white-v2:focus {
+    color: #fff;
+}
+
+.page .link-white-v2:hover {
+    color: #ababab;
+}
+
+.page .link-white-03, .page .link-white-03:active, .page .link-white-03:focus {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.page .link-white-03:hover {
+    color: #000;
+}
+
+.page .link-gray-base-v2, .page .link-gray-base-v2:active, .page .link-gray-base-v2:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.page .link-gray-base-v2:hover {
+    color: #000;
+}
+
+.page .link-gray-base-v2:hover {
+    text-decoration: underline;
+}
+
+.page .link-gray-dark-filled, .page .link-gray-dark-filled:active, .page .link-gray-dark-filled:focus {
+    color: #fff;
+    background: #2a2b2b;
+}
+
+.page .link-gray-dark-filled:hover {
+    color: #fff;
+    background: #000;
+}
+
+.page .link-shop {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.page .link-shop, .page .link-shop:active, .page .link-shop:focus {
+    color: #00030a;
+}
+
+.page .link-shop:hover {
+    color: #000;
+}

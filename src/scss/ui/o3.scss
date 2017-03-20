@@ -1,0 +1,40 @@
+
+.label-custom {
+    padding: .35em .3em .25em;
+    font-weight: 400;
+    font-size: 70%;
+    text-transform: uppercase;
+}
+
+.mac .label-custom {
+    padding-top: .4em;
+}
+
+.label-custom.label-danger {
+    color: #fff;
+    background: #fe4a21;
+    -webkit-box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.label-custom.label-info {
+    color: #fff;
+    background: #3e9cf6;
+    -webkit-box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+blockquote {
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+blockquote q:before, blockquote q:after {
+    content: none;
+}
+
+blockquote cite {
+    font-style: normal;
+}

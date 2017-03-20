@@ -1,0 +1,220 @@
+
+.panel-group.panel-group-custom {
+    margin-bottom: 0;
+}
+
+.panel-group.panel-group-custom .panel-heading + .panel-collapse > .panel-body,
+.panel-group.panel-group-custom .panel-heading + .panel-collapse > .list-group {
+    border-top: 0;
+}
+
+.panel-group.panel-group-custom .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-group.panel-group-corporate .panel + .panel {
+    margin-top: 30px;
+}
+
+.panel-custom {
+    margin: 0;
+    background: inherit;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.panel-custom a {
+    display: block;
+}
+
+.panel-custom .panel-heading {
+    padding: 0;
+    border-bottom: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.panel-custom .panel-body {
+    padding: 0;
+    border: 0;
+}
+
+* + .panel-group-custom {
+    margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+    * + .panel-group-custom {
+        margin-top: 50px;
+    }
+}
+
+.panel-light:first-child .panel-title {
+    border-top: 1px solid #dedede;
+}
+
+.panel-light .panel-title {
+    border-bottom: 1px solid #dedede;
+}
+
+.panel-light .panel-title:nth-child(n + 2) {
+    margin-top: -1px;
+}
+
+.panel-light .panel-title a {
+    position: relative;
+    padding: 24px 55px 22px 32px;
+    font: 700 16px/24px "Montserrat", Helvetica, Arial, sans-serif;
+    color: #000;
+    transition: 1.5s all ease;
+}
+
+.panel-light .panel-title a .panel-arrow:after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel-light .panel-title a.collapsed .panel-arrow:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.panel-light .panel-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 26px;
+    transition: .33s;
+    will-change: transform;
+}
+
+.panel-light .panel-arrow:before, .panel-light .panel-arrow:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #000;
+}
+
+.panel-light .panel-arrow:before {
+    width: 14px;
+    height: 2px;
+    right: 0;
+}
+
+.panel-light .panel-arrow:after {
+    width: 2px;
+    height: 14px;
+    right: 6px;
+    transition: .2s all ease;
+}
+
+.panel-light .panel-collapse {
+    position: relative;
+    margin-top: -1px;
+    border-bottom: 1px solid #dedede;
+    color: #9f9f9f;
+    will-change: transform;
+}
+
+.panel-light .panel-body {
+    padding: 25px 44px 25px 32px;
+}
+
+@media (max-width: 767px) {
+    .panel-light .panel-title a,
+    .panel-light .panel-body {
+        padding-left: 15px;
+    }
+}
+
+.panel-corporate .panel-title a,
+.panel-corporate .panel-collapse {
+    background: #fff;
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+    box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+}
+
+.panel-corporate .panel-title a {
+    position: relative;
+    z-index: 1;
+    padding: 24px 82px 22px 32px;
+    font: 700 16px/24px "Montserrat", Helvetica, Arial, sans-serif;
+    color: #000;
+    transition: 1.3s all ease;
+    border-radius: 6px 6px 0 0;
+}
+
+.panel-corporate .panel-title a .panel-arrow:after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel-corporate .panel-title a.collapsed {
+    border-radius: 6px;
+}
+
+.panel-corporate .panel-title a.collapsed .panel-arrow {
+    border-radius: 0 6px 6px 0;
+}
+
+.panel-corporate .panel-title a.collapsed .panel-arrow:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.panel-corporate .panel-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: 70px;
+    background: #000;
+    border-radius: 0 6px 0 0;
+    transition: 1.3s all ease;
+}
+
+.panel-corporate .panel-arrow:before, .panel-corporate .panel-arrow:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+.panel-corporate .panel-arrow:before {
+    width: 14px;
+    height: 2px;
+    right: 28px;
+}
+
+.panel-corporate .panel-arrow:after {
+    width: 2px;
+    height: 14px;
+    right: 34px;
+}
+
+.panel-corporate .panel-collapse {
+    position: relative;
+    z-index: 2;
+    color: #9f9f9f;
+    border-radius: 0 0 6px 6px;
+}
+
+.panel-corporate .panel-body {
+    padding: 25px 44px 25px 32px;
+}
+
+@media (max-width: 767px) {
+    .panel-corporate .panel-title a,
+    .panel-corporate .panel-body {
+        padding-left: 25px;
+    }
+}

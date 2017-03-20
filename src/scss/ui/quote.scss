@@ -1,0 +1,347 @@
+
+
+.quote-default {
+    position: relative;
+    padding: 43px 0 43px 6px;
+    color: #00030a;
+}
+
+.quote-default svg {
+    fill: #ddd;
+}
+
+.quote-default .quote-open,
+.quote-default .quote-close {
+    position: absolute;
+    left: 30px;
+}
+
+.quote-default .quote-open {
+    top: 0;
+}
+
+.quote-default .quote-close {
+    bottom: 0;
+}
+
+.quote-bordered {
+    padding-top: 14px;
+}
+
+.quote-bordered .quote-body {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.quote-bordered .quote-body-inner {
+    position: relative;
+    padding: 37px 22px 29px 34px;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #e5e7e9;
+}
+
+.quote-bordered .quote-body-inner:before, .quote-bordered .quote-body-inner:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    border-style: solid;
+    border-color: #e5e7e9;
+    background-color: transparent;
+}
+
+.quote-bordered .quote-body-inner:before {
+    left: 10px;
+    width: 46px;
+    border-width: 1px 1px 0 0;
+    -webkit-transform: skew(45deg);
+    transform: skew(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.quote-bordered .quote-body-inner:after {
+    right: 10px;
+    width: calc(100% - 66px);
+    border-width: 1px 0 0 1px;
+    -webkit-transform: skew(-45deg);
+    transform: skew(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.quote-bordered .quote-open {
+    position: absolute;
+    top: -10px;
+    left: 34px;
+    z-index: 2;
+}
+
+.quote-bordered .quote-open > svg {
+    fill: #000;
+}
+
+.quote-bordered .quote-footer {
+    padding-left: 25px;
+}
+
+.quote-bordered cite {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 21px;
+    color: #000;
+}
+
+.quote-bordered * + .quote-footer {
+    margin-top: 9px;
+}
+
+.quote-bordered cite + p {
+    margin-top: 0;
+}
+
+.quote-minimal-bordered {
+    position: relative;
+    padding: 16px 0 26px;
+    text-align: center;
+}
+
+.quote-minimal-bordered q {
+    font: 400 20px "Lato", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: #535457;
+}
+
+.quote-minimal-bordered q:before, .quote-minimal-bordered q:after {
+    content: '"';
+}
+
+.quote-minimal-bordered:before, .quote-minimal-bordered:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 270px;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 50%, transparent 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #dedede 50%, transparent 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #dedede 50%, transparent 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000000',GradientType=1 );
+}
+
+.quote-minimal-bordered:before {
+    top: 0;
+}
+
+.quote-minimal-bordered:after {
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .quote-minimal-bordered q {
+        font-size: 24px;
+        line-height: 1.55;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote-minimal-bordered q {
+        font-size: 30px;
+    }
+}
+
+.quote-minimal q {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.2;
+    color: #000;
+}
+
+.quote-minimal cite {
+    font: 700 15px "Montserrat", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+    color: #000;
+}
+
+.quote-minimal .caption {
+    color: #9f9f9f;
+}
+
+.quote-minimal.quote-minimal-inverse q {
+    color: #fff;
+}
+
+.quote-minimal.quote-minimal-inverse cite {
+    color: #fff;
+}
+
+.quote-minimal.quote-minimal-inverse .caption {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quote-minimal * + .caption {
+    margin-top: 0;
+}
+
+.quote-minimal * + .quote-meta {
+    margin-top: 20px;
+}
+
+.quote-strict q,
+.quote-strict cite {
+    color: #000;
+}
+
+.quote-strict q {
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 28px;
+}
+
+.quote-strict cite {
+    display: block;
+    font: 700 16px/21px "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.quote-strict * + cite {
+    margin-top: 20px;
+}
+
+.quote-strict.quote-strict-inverse q,
+.quote-strict.quote-strict-inverse cite {
+    color: #fff;
+}
+
+.quote-vertical {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.quote-vertical q {
+    font-size: 16px;
+    line-height: 1.57895;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.quote-vertical cite {
+    display: block;
+    color: #000;
+    font: 400 14px/18px "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.quote-vertical .quote-open > svg {
+    fill: #000;
+}
+
+.quote-vertical .quote-image,
+.quote-vertical .quote-image > img {
+    border-radius: 600px;
+}
+
+.quote-vertical .quote-image > img {
+    width: auto;
+}
+
+.quote-vertical * + cite {
+    margin-top: 16px;
+}
+
+.quote-vertical * + .caption {
+    margin-top: 0;
+}
+
+.quote-vertical * + .quote-text {
+    margin-top: 25px;
+}
+
+.quote-vertical * + .quote-meta {
+    margin-top: 25px;
+}
+
+.quote-vertical.quote-vertical-inverse q,
+.quote-vertical.quote-vertical-inverse .caption {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quote-vertical.quote-vertical-inverse cite {
+    color: #fff;
+}
+
+.quote-vertical.quote-vertical-inverse .quote-open > svg {
+    fill: #fff;
+}
+
+.quote-review cite {
+    font: 700 14px/18px "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.025em;
+    color: #000;
+}
+
+.quote-review .quote-header {
+    position: relative;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    margin-bottom: -2px;
+}
+
+.quote-review .quote-header > * {
+    margin-top: 2px;
+}
+
+.quote-review .quote-header > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.quote-review .quote-header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.quote-review * + .quote-body {
+    margin-top: 10px;
+}
+
+* + .quote-review {
+    margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+    .quote-minimal q {
+        font-size: 22px;
+    }
+    .quote-minimal cite {
+        font-size: 19px;
+    }
+    .quote-minimal * + .quote-meta {
+        margin-top: 37px;
+    }
+    * + .quote-review {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .quote-minimal q {
+        font-size: 24px;
+    }
+    .quote-vertical q {
+        font-size: 19px;
+    }
+}
+
+.page .box-text > * {
+    display: inline;
+    margin: 0 .25em 0 0;
+}

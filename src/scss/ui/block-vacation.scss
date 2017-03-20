@@ -1,0 +1,30 @@
+
+
+.block-vacation {
+    position: relative;
+    width: 100%;
+    padding: 39px 9% 45px;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+    box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+}
+
+.block-vacation, .block-vacation:active, .block-vacation:focus, .block-vacation:hover {
+    color: #9f9f9f;
+}
+
+.block-vacation:hover {
+    -webkit-box-shadow: -3px 5px 12px 0px rgba(65, 65, 65, 0.16);
+    box-shadow: -3px 5px 12px 0px rgba(65, 65, 65, 0.16);
+}
+
+.block-vacation * + .block-meta {
+    margin-top: 14px;
+}
+
+@media (min-width: 1200px) {
+    .block-vacation * + .block-meta {
+        margin-top: 5px;
+    }
+}

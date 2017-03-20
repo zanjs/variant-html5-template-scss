@@ -1,0 +1,83 @@
+
+
+.one-screen-page .page {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.one-screen-page .page-inner {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.one-screen-page .page-inner,
+.one-screen-page .page-inner > * {
+    width: 100%;
+}
+
+.one-screen-page .page-head,
+.one-screen-page .page-foot {
+    padding: 0;
+    background: transparent;
+}
+
+.one-screen-page .page-head-inner {
+    padding: calc(1em + 4vh) 0 calc(1em + 2vh);
+}
+
+.one-screen-page .page-content {
+    padding: calc(1em + 4vh) 0;
+}
+
+.one-screen-page .page-foot-inner {
+    padding: calc(1em + 2vh) 0 calc(1em + 4vh);
+}
+
+.one-screen-page .rights {
+    color: #fff;
+}
+
+.one-screen-page .rights a, .one-screen-page .rights a:active, .one-screen-page .rights a:focus {
+    color: #000;
+}
+
+.one-screen-page .rights a:hover {
+    color: #ababab;
+}
+
+@media (min-width: 480px) {
+    .one-screen-page .page-inner {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1800px) {
+    .one-screen-page .page-head-inner {
+        padding: 50px 0 10px;
+    }
+    .one-screen-page .page-content {
+        padding: 30px 0;
+    }
+    .one-screen-page .page-foot-inner {
+        padding: 50px 0 23px;
+    }
+}
+
+.ie-10 .one-screen-page,
+.ie-11 .one-screen-page {
+    overflow-x: hidden;
+    overflow-y: auto;
+}

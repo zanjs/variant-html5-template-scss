@@ -1,0 +1,133 @@
+
+.bg-wrap {
+    position: relative;
+}
+
+.bg-wrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: inherit;
+    z-index: -1;
+}
+
+.bg-wrap-sm-left {
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .bg-wrap-sm-left:before {
+        width: 100vw;
+        right: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.bg-wrap-sm-right {
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .bg-wrap-sm-right:before {
+        width: 100vw;
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@media (min-width: 480px) {
+    .wrap-justify {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .wrap-justify > * + * {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrap-justify {
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrap-justify {
+        padding-right: 30px;
+    }
+}
+
+.link-wrap {
+    line-height: 1;
+}
+
+.link-wrap a {
+    display: inline;
+    line-height: 1;
+}
+
+[class*='bg-decoration-wrap'] {
+    position: relative;
+    overflow: hidden;
+}
+
+[class*='bg-decoration-wrap'] .bg-decoration-content {
+    position: relative;
+    z-index: 2;
+}
+
+[class*='bg-decoration-wrap'] .bg-decoration-object {
+    top: 0;
+    bottom: auto;
+}
+
+.bg-decoration-bottom .bg-decoration-object {
+    top: auto;
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .bg-decoration-wrap-sm .bg-decoration-object {
+        height: 50%;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    .bg-decoration-bottom-sm .bg-decoration-object {
+        height: 34%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bg-decoration-object {
+        height: 50%;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    .bg-decoration-bottom-mod .bg-decoration-object {
+        height: 45%;
+    }
+}

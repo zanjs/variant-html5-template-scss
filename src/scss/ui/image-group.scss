@@ -1,0 +1,110 @@
+
+.image-group {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.image-group img {
+    position: relative;
+    height: auto !important;
+    max-width: none;
+    width: 100% !important;
+}
+
+.image-group figure {
+    position: relative;
+}
+
+.image-group figure:nth-child(1) {
+    z-index: 3;
+    max-width: 194px;
+    min-width: 29%;
+}
+
+.image-group figure:nth-child(1) img {
+    -webkit-transform: translateY(-1.7%);
+    transform: translateY(-1.7%);
+    left: -3px;
+}
+
+.image-group figure:nth-child(2) {
+    z-index: 2;
+    max-width: 404px;
+    min-width: 60%;
+    margin-left: -29.5%;
+}
+
+.image-group figure:nth-child(2) img {
+    -webkit-transform: translateY(8%);
+    transform: translateY(8%);
+}
+
+.image-group figure:nth-child(3) {
+    z-index: 1;
+    max-width: 546px;
+    min-width: 82%;
+    margin-left: -42.5%;
+}
+
+.image-group figure:nth-child(3) img {
+    -webkit-transform: translateY(-1.9%);
+    transform: translateY(-1.9%);
+}
+
+.image-group-extended {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+    .image-wrap-1 {
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-wrap-1 {
+        padding-right: 0;
+        margin-right: -10px;
+    }
+}
+
+.image-wrap-1 img {
+    max-width: 107%;
+}
+
+@media (min-width: 992px) {
+    .image-wrap-2 {
+        position: relative;
+        right: -14px;
+        top: 12px;
+    }
+}
+
+.image-wrap-3 {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0) scale(1.02);
+    transform: translate3d(0, 0, 0) scale(1.02);
+    margin-top: -5px;
+    margin-left: -53px;
+}

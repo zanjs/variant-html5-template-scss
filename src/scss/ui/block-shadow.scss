@@ -1,0 +1,29 @@
+
+.block-shadow {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(65, 65, 65, 0.12);
+    box-shadow: 0px 1px 10px 0px rgba(65, 65, 65, 0.12);
+    text-align: center;
+}
+
+.block-shadow .block-inner {
+    padding: 0 40px;
+}
+
+.block-shadow * + .block-footer {
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .block-shadow {
+        padding-top: 38px;
+    }
+    .block-shadow .block-inner {
+        padding: 0 70px;
+    }
+}

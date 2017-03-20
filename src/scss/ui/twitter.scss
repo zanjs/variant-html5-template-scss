@@ -1,0 +1,116 @@
+
+
+.twitter-item-minimal .tweet-user {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.twitter-item-minimal .tweet-user a, .twitter-item-minimal .tweet-user a:active, .twitter-item-minimal .tweet-user a:focus {
+    color: #000;
+}
+
+.twitter-item-minimal .tweet-user a:hover {
+    color: #000;
+}
+
+.twitter-item-minimal .tweet-user a:before {
+    content: '-';
+}
+
+.twitter-item-minimal .tweet-text a, .twitter-item-minimal .tweet-text a:active, .twitter-item-minimal .tweet-text a:focus {
+    color: #000;
+}
+
+.twitter-item-minimal .tweet-text a:hover {
+    color: #000;
+}
+
+.twitter-item-minimal * + .tweet-text {
+    margin-top: 0;
+}
+
+.twitter-item-minimal * + .tweet-user {
+    margin-top: 10px;
+}
+
+.twitter-item-minimal + .twitter-item-minimal {
+    margin-top: 25px;
+}
+
+.twitter-widget {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+    box-shadow: -1px 0px 5px 0px rgba(65, 65, 65, 0.12);
+}
+
+.twitter-widget > a {
+    display: block;
+    color: #9f9f9f;
+}
+
+.twitter-widget .tweet-text a, .twitter-widget .tweet-text a:active, .twitter-widget .tweet-text a:focus {
+    color: #000;
+}
+
+.twitter-widget .tweet-text a:hover {
+    color: #000;
+}
+
+.twitter-widget .twitter-widget-time {
+    color: #9f9f9f;
+}
+
+.twitter-widget .twitter-widget-meta > * {
+    line-height: 1.1;
+}
+
+.twitter-widget .twitter-widget-meta > * + * {
+    margin-top: 5px;
+}
+
+.twitter-widget .twitter-widget-media {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.twitter-widget .twitter-widget-media > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 101%;
+}
+
+.twitter-widget .twitter-widget-media:empty {
+    display: none;
+}
+
+.twitter-widget .twitter-widget-media:not(:empty) {
+    padding-bottom: 42.5170068%;
+}
+
+.twitter-widget .tweet-avatar {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: #dedede;
+}
+
+.twitter-widget .twitter-widget-header {
+    padding: 30px 30px 0 30px;
+}
+
+.twitter-widget .twitter-widget-inset {
+    padding: 25px 30px 15px;
+}
+
+.twitter-widget .twitter-widget-footer {
+    padding: 15px 30px;
+}
+
+* + .twitter-widget {
+    margin-top: 30px;
+}
