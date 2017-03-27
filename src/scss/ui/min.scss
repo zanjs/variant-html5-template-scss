@@ -305,7 +305,6 @@ html {
 }
 
 body {
-    font-family: "adonide_regular","Lato", Helvetica, Arial, sans-serif, "Microsoft YaHei";
     font-size: 14px;
     line-height: 1.71429;
     color: #9f9f9f;
@@ -328,7 +327,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #58c4a7;
+
     text-decoration: none;
 }
 
@@ -844,9 +843,7 @@ address {
 code,
 kbd,
 pre,
-samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
+
 
 code {
     padding: 2px 4px;

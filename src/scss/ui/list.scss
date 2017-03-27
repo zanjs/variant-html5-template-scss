@@ -100,7 +100,6 @@ dt {
 }
 
 .list-terms-variant-1 dt {
-    font: 700 16px/22px "Montserrat", Helvetica, Arial, sans-serif;
     letter-spacing: -.025em;
     color: #000;
 }
@@ -220,7 +219,8 @@ dt {
 .list-marked-variant-2 > li > a {
     position: relative;
     display: inline-block;
-    padding-left: 20px;
+    // padding-left: 20px;
+    transition: .33s all ease;
 }
 
 .list-marked-variant-2 > li > a:before {
@@ -231,11 +231,17 @@ dt {
     font: 400 18px/24px 'FontAwesome';
     color: #b0b0b0;
     transition: .33s all ease;
+    display: none;
 }
 
-.list-marked-variant-2 > li > a:hover:before {
-    left: 4px;
+.list-marked-variant-2 > li > a:hover {
+   
     color: #000;
+    padding-left: 5px;
+    &:before{
+        // display: inline-block;
+        color: #000;
+    }
 }
 
 .list-marked-variant-2 > li + li {
@@ -497,7 +503,6 @@ dt {
 
 .list-wide-bordered {
     color: #00030a;
-    font: 400 14px/22px "Montserrat", Helvetica, Arial, sans-serif;
     border-top: 1px solid #dedede;
 }
 

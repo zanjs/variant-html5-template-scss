@@ -13,13 +13,12 @@
 }
 
 html {
-  font-family: "adonide_regular","Lato", Helvetica, Arial, sans-serif, "Microsoft YaHei";
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: "adonide_regular","Lato", Helvetica, Arial, sans-serif, "Microsoft YaHei";
+  font-family: "adonide_regular";
   -webkit-text-size-adjust: none;
   color: #9f9f9f;
   background-color: #fff;
@@ -91,7 +90,7 @@ a, a:active, a:focus {
 }
 
 a:hover, a:focus {
-  color: #000;
+  // color: #000;
   text-decoration: none;
 }
 
@@ -408,7 +407,7 @@ h6,
 }
 
 .h7 {
-  font: 700 14px/24px "Montserrat", Helvetica, Arial, sans-serif;
+
   text-transform: uppercase;
   color: #414141;
 }
@@ -432,7 +431,6 @@ h6,
 }
 
 .text-large {
-  font: 700 38px/42px "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -444,7 +442,6 @@ h6,
 .text-extra-large-bordered {
   display: inline-block;
   padding: .07em .11em;
-  font: 700 120px "Montserrat", Helvetica, Arial, sans-serif;
   letter-spacing: -.05em;
   line-height: .8;
   border: .075em solid;
