@@ -70,8 +70,8 @@
 
 .page-title-wrap {
     background: #000;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
+    // background-attachment: fixed;
+
     background-size: cover;
     background-position: center 80%;
 }
@@ -79,5 +79,22 @@
 @media (min-width: 768px) {
     .page-title {
         text-align: left;
+    }
+}
+
+
+.page-about-title{
+    // position: absolute;
+    // right: 0;
+    color: #fffefe;
+    font-size: 72px;
+}
+
+.page-title-wrap{
+    .shell-wrap{
+        right: 0;
+        left: 0;
+        bottom: 0;
+        // background-color: red;
     }
 }

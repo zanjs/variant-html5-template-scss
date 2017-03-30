@@ -302,6 +302,9 @@
 .position-relative{
     position: relative;
 }
+.position-absolute{
+    position: absolute;
+}
 .contact-bg{
     position: absolute;
     left: 0;

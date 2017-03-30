@@ -28,6 +28,9 @@ video {
   display: inline-block;
   vertical-align: baseline; }
 
+p {
+  word-break: break-all; }
+
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -25033,7 +25036,6 @@ blockquote cite {
 
 .page-title-wrap {
   background: #000;
-  background-attachment: fixed;
   -moz-background-size: cover;
   background-size: cover;
   background-position: center 80%; }
@@ -25041,6 +25043,15 @@ blockquote cite {
 @media (min-width: 768px) {
   .page-title {
     text-align: left; } }
+
+.page-about-title {
+  color: #fffefe;
+  font-size: 72px; }
+
+.page-title-wrap .shell-wrap {
+  right: 0;
+  left: 0;
+  bottom: 0; }
 
 .pricing-table {
   overflow: hidden;

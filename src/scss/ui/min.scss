@@ -32,6 +32,10 @@ video {
     vertical-align: baseline;
 }
 
+p{
+    word-break: break-all;
+}
+
 audio:not([controls]) {
     display: none;
     height: 0;
