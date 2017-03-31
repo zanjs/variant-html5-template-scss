@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+
+<head>
+    <title>Products</title>
+    <%- include('./layouts/head') -%>
+</head>
+
+<body style="">
+    <div class="page">
+        <%- include('./layouts/loader') -%>
+            <%- include('./layouts/nav') -%>
+                <section style="height: 100px;"></section>
+
+                <section class="text-center section-75 product-class-title">
+                    High-Voltage Cables
+                </section>
+
+                <!--list-->
+                <section class="section-50  product-bg">
+                    <div class="shell isotope-wrap">
+                        <div class="range">
+                            <%- include('./product/choose') -%>
+                            <div class="cell-xs-12 offset-top-40">
+                                <div class="row">
+                                    <div data-isotope-layout="fitRows" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="isotope isotope-gutter-default isotope--loaded"
+                                        style="position: relative; height: 649px;">
+
+                                        <%- include('./product/list') -%>
+                                            <%- include('./product/list-1') -%>
+                                                <%- include('./product/list-2') -%>
+                                                    <%- include('./product/list-3') -%>
+                                                        <%- include('./product/list-4') -%>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--list end-->
+
+                <%- include('./layouts/footer') -%>
+    </div>
+
+    <%- include('./layouts/script') -%>
+</body>
+
+
+</html>

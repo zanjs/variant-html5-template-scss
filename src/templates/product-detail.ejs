@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+
+<head>
+    <title>Products Detail</title>
+    <%- include('./layouts/head') -%>
+</head>
+
+<body style="">
+<div class="page">
+    <%- include('./layouts/loader') -%>
+            <%- include('./layouts/nav') -%>
+    
+
+
+    <section style="height: 100px;"></section>
+
+    <section class="text-center section-75 product-details-title">
+        <h3>YJV22</h3>
+        <p>
+            XLPE insulation Steel Tape Armcred PVC Sheath power cable
+        </p>
+    </section>
+    <!--detail-->
+
+    <!--images-->
+    <section class="product-bg ">
+        <div class="shell">
+            <!--<img src="./imgs/pic.png" alt="">-->
+            <article class="post-classic section-bottom-15">
+                <div class="post-media">
+                    <div data-items="1" data-stage-padding="0" data-loop="true" data-margin="15" data-mouse-drag="true" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" class="owl-carousel owl-style-minimal">
+                        <div class="item">
+                            <figure><img src="images/blog-classic-5-970x546.jpg" alt="" width="970" height="546"/>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure><img src="images/blog-classic-6-970x546.jpg" alt="" width="970" height="546"/>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure><img src="images/blog-classic-7-970x546.jpg" alt="" width="970" height="546"/>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </section>
+    <!--images end-->
+    <!--body-->
+    <section class="product-detail-body section-75">
+        <div class="shell">
+            <h5>
+                Application Occasion
+            </h5>
+            <ul>
+                <li>To be laid underground, the cable could hear Mechanical force outside,</li>
+                <li>
+                    but it couldn’t great pulling force.
+                </li>
+            </ul>
+            <p>
+                hello word!
+            </p>
+        </div>
+    </section>
+    <!--body end-->
+
+    <!--detail end-->
+
+    <!--Paging-->
+
+    <section  class="section-15 product-paging">
+        <%- include('./layouts/paging') -%>
+    </section>
+
+    <!--Paging end-->
+    <%- include('./layouts/footer') -%>
+</div>
+</body>
+    <%- include('./layouts/script') -%>
+</html>

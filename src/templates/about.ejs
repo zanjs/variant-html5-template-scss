@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+
+<head>
+    <title>About us</title>
+    <%- include('./layouts/head') -%>
+</head>
+
+<body style="">
+<div class="page">
+    <%- include('./layouts/loader') -%>
+    <%- include('./layouts/nav') -%>
+
+    <section style="background-image: url(images/bg-image-1.jpg);" class="section-165 section-sm-200 section-md-200 section-lg-bottom-265  page-title-wrap">
+        <div class="position-absolute shell-wrap">
+            <div class="shell position-relative">
+                <div class="page-about-title text-uppercase text-right font-adonide_bold">
+                   <span>about</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-whisper">
+        <div class="shell">
+            <div class="page-about-title text-uppercase text-right font-adonide_bold">
+                    <span>us</span>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="section-50  section-lg-top-90 bg-whisper">
+        <div class="shell">
+
+            <blockquote class="about-blockquote">
+                <p style="max-width: 380px">
+                    Fully Intergrated automation 
+                    solution provider in the 
+                    petrolchemical industry.
+                </p>
+
+            </blockquote>
+
+            <div class="about-description text-justify">
+                <p>
+                The Bright future of process control and civil industry solutions is being powered by BrightPower–
+                the cable and wire expert and your preferred partner for operational efficiency,
+                safety and performance.
+                </p>
+                <p>
+                    As a growing company Brightpower strives to meet and exceed ever-increasing performance standards.
+                    As our international trade sector has been recognized by more and more customers.
+                    BrightPower has particpated in the establishment of Tiancai Wire and Cable group company.
+                    Tiancai as our production base is located in tianchang ANHui province, which is 4 hours driving distince from our Shanghai office.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--about end-->
+    <!--about other-->
+    <section class="section-50 section-sm-75 section-lg-100">
+        <div class="shell">
+            <%- include('./about/solution') -%>
+            <!--Products-->
+            <%- include('./about/products') -%>           
+            <!--Products end-->
+            <!--Industry-->
+            <%- include('./about/industry') -%>          
+            <!--Industry end-->
+        </div>
+    </section>
+    <!--about other end-->
+    <%- include('./layouts/touch') -%>  
+    <!--about footer-->
+    
+    <!--about footer end-->
+    <%- include('./layouts/footer') -%>
+</div>
+
+<%- include('./layouts/script') -%>
+
+</body>
+
+
+</html>
