@@ -14,10 +14,13 @@ import rename       from 'gulp-rename'
 import notify       from 'gulp-notify'
 import header       from 'gulp-header'
 import autoprefixer from 'gulp-autoprefixer'
+import ejs          from 'gulp-ejs'
+import util         from 'gulp-util'
 
 
 const cssLoadSrc = './src/scss/main.scss'
 const mincss = 'app.css'
+const ejsSrc = './src/templates/*.ejs'
 
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
@@ -47,6 +50,13 @@ gulp.task('sass', () => gulp.src(cssLoadSrc)
     .pipe(gulp.dest(`./css/`))
     .pipe(reload({ stream: true }))
     .pipe(notify({ message: 'Styles  task complete' })))
+
+
+gulp.task('sass', () => gulp.src(ejsSrc)
+    .pipe(ejs({
+        msg: 'Hello Gulp!'
+    }).on('error', gutil.log))
+    .pipe(gulp.dest('./build')))
 
 // 静态服务器 + 监听 scss/html 文件
 gulp.task('dev', ['sass'], () => {
