@@ -33,8 +33,10 @@ video {
 }
 
 p{
-    word-break: break-all;
+    // word-break: break-all;
+    // text-align:justify;
 }
+
 
 audio:not([controls]) {
     display: none;

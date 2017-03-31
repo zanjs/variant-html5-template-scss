@@ -1,4 +1,5 @@
 @import "media";
+@import "const";
 
     @import "./ui/min.scss";
 
@@ -11,6 +12,13 @@
     @import "./ui/Toolkit.scss";
 
     @import "./ui/o1.scss";
+    @import "./ui/h1.scss";
+
+    @import "./ui/btn.scss";
+    
+    @import "./ui/text.scss";
+
+    @import "./ui/page.scss";
 
     @import "./ui/fa.scss";
 

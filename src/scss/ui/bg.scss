@@ -1,114 +1,98 @@
-
 .bg-wrap {
     position: relative;
-}
-
-.bg-wrap:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 120vw;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background: inherit;
-    z-index: -1;
-}
-
-.bg-wrap-sm-left {
-    z-index: 1;
-}
-
-@media (min-width: 992px) {
-    .bg-wrap-sm-left:before {
-        width: 100vw;
-        right: 0;
-        -webkit-transform: none;
-        transform: none;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 120vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background: inherit;
+        z-index: -1;
+    }
+    &-sm {
+        &-left {
+            z-index: 1;
+            &:before {
+                @include media(min, $Media-pc) {
+                    width: 100vw;
+                    right: 0;
+                    transform: none;
+                }
+            }
+        }
+        %-right {
+            z-index: 1;
+            &:before {
+                @include media(min, $Media-pc) {
+                    width: 100vw;
+                    left: 0;
+                    transform: none;
+                }
+            }
+        }
     }
 }
 
-.bg-wrap-sm-right {
-    z-index: 1;
-}
-
-@media (min-width: 992px) {
-    .bg-wrap-sm-right:before {
-        width: 100vw;
-        left: 0;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@media (min-width: 480px) {
-    .wrap-justify {
-        display: -ms-flexbox;
-        display: -webkit-flex;
+.wrap-justify {
+    @include media(min, $Media-mini) {
         display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
         align-items: center;
-        -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
         justify-content: space-around;
     }
-    .wrap-justify > * + * {
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .wrap-justify {
-        -webkit-justify-content: space-between;
+    @include media(min, $Media-pad) {
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-}
-
-@media (min-width: 1200px) {
-    .wrap-justify {
+    @include media(min, $Media-pad) {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    @include media(min, $Media-pc-big) {
         padding-right: 30px;
+    }
+    &>*+* {
+        @include media(min, $Media-mini) {
+            margin-top: 0;
+        }
     }
 }
 
 .link-wrap {
     line-height: 1;
-}
-
-.link-wrap a {
-    display: inline;
-    line-height: 1;
+    a {
+        display: inline;
+        line-height: 1;
+    }
 }
 
 [class*='bg-decoration-wrap'] {
     position: relative;
     overflow: hidden;
+    .bg-decoration {
+        &-content {
+            position: relative;
+            z-index: 2;
+        }
+        &-object {
+            top: 0;
+            bottom: auto;
+        }
+    }
 }
 
-[class*='bg-decoration-wrap'] .bg-decoration-content {
-    position: relative;
-    z-index: 2;
+.bg-decoration-bottom {
+    .bg-decoration-object {
+        top: auto;
+        bottom: 0;
+    }
 }
 
-[class*='bg-decoration-wrap'] .bg-decoration-object {
-    top: 0;
-    bottom: auto;
-}
-
-.bg-decoration-bottom .bg-decoration-object {
-    top: auto;
-    bottom: 0;
-}
-
-@media (min-width: 768px) {
+@media (min-width: $Media-pad) {
     .bg-decoration-wrap-sm .bg-decoration-object {
         height: 50%;
         position: absolute;
@@ -120,7 +104,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $Media-pc-big) {
     .bg-decoration-object {
         height: 50%;
         position: absolute;
@@ -129,5 +113,229 @@
     }
     .bg-decoration-bottom-mod .bg-decoration-object {
         height: 45%;
+    }
+}
+
+.context-dark,
+.bg-gray-base,
+.bg-gray-darker,
+.bg-gray-dark,
+.bg-mine-shaft,
+.bg-cod-gray,
+.bg-primary {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.context-dark h1,
+.bg-gray-base h1,
+.bg-gray-darker h1,
+.bg-gray-dark h1,
+.bg-mine-shaft h1,
+.bg-cod-gray h1,
+.bg-primary h1,
+.context-dark h2,
+.bg-gray-base h2,
+.bg-gray-darker h2,
+.bg-gray-dark h2,
+.bg-mine-shaft h2,
+.bg-cod-gray h2,
+.bg-primary h2,
+.context-dark h3,
+.bg-gray-base h3,
+.bg-gray-darker h3,
+.bg-gray-dark h3,
+.bg-mine-shaft h3,
+.bg-cod-gray h3,
+.bg-primary h3,
+.context-dark h4,
+.bg-gray-base h4,
+.bg-gray-darker h4,
+.bg-gray-dark h4,
+.bg-mine-shaft h4,
+.bg-cod-gray h4,
+.bg-primary h4,
+.context-dark h5,
+.bg-gray-base h5,
+.bg-gray-darker h5,
+.bg-gray-dark h5,
+.bg-mine-shaft h5,
+.bg-cod-gray h5,
+.bg-primary h5,
+.context-dark h6,
+.bg-gray-base h6,
+.bg-gray-darker h6,
+.bg-gray-dark h6,
+.bg-mine-shaft h6,
+.bg-cod-gray h6,
+.bg-primary h6,
+.context-dark .h1,
+.bg-gray-base .h1,
+.bg-gray-darker .h1,
+.bg-gray-dark .h1,
+.bg-mine-shaft .h1,
+.bg-cod-gray .h1,
+.bg-primary .h1,
+.context-dark .h2,
+.bg-gray-base .h2,
+.bg-gray-darker .h2,
+.bg-gray-dark .h2,
+.bg-mine-shaft .h2,
+.bg-cod-gray .h2,
+.bg-primary .h2,
+.context-dark .h3,
+.bg-gray-base .h3,
+.bg-gray-darker .h3,
+.bg-gray-dark .h3,
+.bg-mine-shaft .h3,
+.bg-cod-gray .h3,
+.bg-primary .h3,
+.context-dark .h4,
+.bg-gray-base .h4,
+.bg-gray-darker .h4,
+.bg-gray-dark .h4,
+.bg-mine-shaft .h4,
+.bg-cod-gray .h4,
+.bg-primary .h4,
+.context-dark .h5,
+.bg-gray-base .h5,
+.bg-gray-darker .h5,
+.bg-gray-dark .h5,
+.bg-mine-shaft .h5,
+.bg-cod-gray .h5,
+.bg-primary .h5,
+.context-dark .h6,
+.bg-gray-base .h6,
+.bg-gray-darker .h6,
+.bg-gray-dark .h6,
+.bg-mine-shaft .h6,
+.bg-cod-gray .h6,
+.bg-primary .h6 {
+    color: #fff;
+}
+
+.context-dark a,
+.bg-gray-base a,
+.bg-gray-darker a,
+.bg-gray-dark a,
+.bg-mine-shaft a,
+.bg-cod-gray a,
+.bg-primary a,
+.context-dark a:active,
+.bg-gray-base a:active,
+.bg-gray-darker a:active,
+.bg-gray-dark a:active,
+.bg-mine-shaft a:active,
+.bg-cod-gray a:active,
+.bg-primary a:active,
+.context-dark a:focus,
+.bg-gray-base a:focus,
+.bg-gray-darker a:focus,
+.bg-gray-dark a:focus,
+.bg-mine-shaft a:focus,
+.bg-cod-gray a:focus,
+.bg-primary a:focus {
+    color: #fff;
+}
+
+.context-dark a:hover,
+.bg-gray-base a:hover,
+.bg-gray-darker a:hover,
+.bg-gray-dark a:hover,
+.bg-mine-shaft a:hover,
+.bg-cod-gray a:hover,
+.bg-primary a:hover {
+    color: #000;
+}
+
+.context-dark .big,
+.bg-gray-base .big,
+.bg-gray-darker .big,
+.bg-gray-dark .big,
+.bg-mine-shaft .big,
+.bg-cod-gray .big,
+.bg-primary .big,
+.context-dark .text-bigger,
+.bg-gray-base .text-bigger,
+.bg-gray-darker .text-bigger,
+.bg-gray-dark .text-bigger,
+.bg-mine-shaft .text-bigger,
+.bg-cod-gray .text-bigger,
+.bg-primary .text-bigger,
+.context-dark .text-extra-large-bordered,
+.bg-gray-base .text-extra-large-bordered,
+.bg-gray-darker .text-extra-large-bordered,
+.bg-gray-dark .text-extra-large-bordered,
+.bg-mine-shaft .text-extra-large-bordered,
+.bg-cod-gray .text-extra-large-bordered,
+.bg-primary .text-extra-large-bordered {
+    color: #fff;
+}
+
+.bg {
+    &-gray {
+        background: #9f9f9f;
+        fill: #9f9f9f;
+        &-base {
+            background: #333;
+            fill: #333;
+        }
+        &-darker {
+            background: #00030a;
+            fill: #00030a;
+        }
+        &-dark {
+            background: #2a2b2b;
+            fill: #2a2b2b;
+        }
+        &-light {
+            background: #dedede;
+            fill: #dedede;
+        }
+        &-lighter {
+            background: #f9f9f9;
+            fill: #f9f9f9;
+        }
+    }
+    &-mine-shaft {
+        background: #333;
+        fill: #333;
+    }
+    &-cod-gray {
+        background: #111;
+        fill: #111;
+    }
+    &-primary {
+        background: #000;
+        fill: #000;
+    }
+    &-whisper {
+        background: #f6f7fa;
+        fill: #f6f7fa;
+    }
+    &-athens-gray {
+        background: #e5e8ef;
+        fill: #e5e8ef;
+    }
+    &-iron {
+        background: #dcdde0;
+        fill: #dcdde0;
+    }
+    &-image {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        &-centered {
+            background-size: auto;
+        }
+        &-n1 {
+            background-size: auto 100%;
+            @include media (max, 767px) {
+                background-image: none !important;
+            }
+        }
+    }
+    &-fixed {
+        background-attachment: fixed;
+        background-size: cover;
     }
 }

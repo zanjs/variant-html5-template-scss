@@ -1,0 +1,220 @@
+.text-bigger,
+.quote-default {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.44;
+    @include media(min, $Media-pad) {
+        font-size: 20px;
+    }
+    @include media(min, $Media-pc) {
+        font-size: 25px;
+    } //   @include media(min, $Media-pc-big) {
+    //     line-height: 1.07692;
+    //     font-size: 104px;
+    //   }
+}
+
+.text-large {
+    @include media(min, $Media-pc) {
+        font-size: 48px;
+    }
+}
+
+.text-extra-large-bordered {
+    display: inline-block;
+    padding: .07em .11em;
+    letter-spacing: -.05em;
+    line-height: .8;
+    border: .075em solid;
+    text-align: center;
+    @include media(min, $Media-pad) {
+        font-size: 220px;
+    }
+    @include media(min, $Media-pc-big) {
+        font-size: 272px;
+    }
+}
+
+.text {
+    &-style {
+        &-n1 {
+            color: #9b9b9b;
+        }
+        &-n2 {
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+}
+
+.page {
+    .text {
+        &-primary {
+            color: #000;
+            &:hover,
+            &:focus {
+                color: #3dac8e;
+            }
+        }
+        &-secondary {
+            color: #00030a;
+            &:hover,
+            &:focus {
+                color: black;
+            }
+        }
+        &-red-orange {
+            color: #ff4b22;
+            &:hover,
+            &:focus {
+                color: #ee2c00;
+            }
+        }
+        &-gray-base {
+            color: #000;
+            &:hover,
+            &:focus {
+                color: black;
+            }
+        }
+        &-silver {
+            color: #cdcdcd;
+            &:hover,
+            &:focus {
+                color: #b4b4b4;
+            }
+        }
+        &-dark {
+            color: #2a2b2b;
+            &:hover,
+            &:focus {
+                color: #111;
+            }
+        }
+        &-gray {
+            color: #9f9f9f;
+            &:hover,
+            &:focus {
+                color: #868686;
+            }
+            &-light {
+                color: #dedede;
+                &:hover,
+                &:focus {
+                    color: #c5c5c5;
+                }
+            }
+        }
+        &-dusty-gray {
+            color: #9b9b9b;
+            &:hover,
+            &:focus {
+                color: #828282;
+            }
+        }
+        &-white {
+            color: #fff;
+            &:hover,
+            &:focus {
+                color: #e6e6e6;
+            }
+            &-n05 {
+                color: rgba(255, 255, 255, 0.5);
+                &:hover,
+                &:focus {
+                    color: rgba(230, 230, 230, 0.5);
+                }
+            }
+            &-n03 {
+                color: rgba(255, 255, 255, 0.3);
+                &:hover,
+                &:focus {
+                    color: rgba(230, 230, 230, 0.3);
+                }
+            }
+        }
+    }
+}
+
+.snackbars {
+    max-width: 280px;
+    padding: 9px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: left;
+    background: #171717;
+    border-radius: 0;
+    @include media(min, $Media-mini) {
+        max-width: 380px;
+        padding: 14px 17px;
+    }
+    .icon-xxs {
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+        vertical-align: baseline;
+    }
+    p span:last-child {
+        padding-left: 14px;
+    }
+    &-left {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    &-right {
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.text {
+    &-italic {
+        font-style: italic;
+    }
+    &-normal {
+        font-style: normal;
+    }
+    &-underline {
+        text-decoration: underline;
+    }
+    &-strike {
+        text-decoration: line-through;
+    }
+    &-thin {
+        font-weight: 100;
+    }
+    &-light {
+        font-weight: 300;
+    }
+    &-regular {
+        font-weight: 400;
+    }
+    &-medium {
+        font-weight: 500;
+    }
+    &-sbold {
+        font-weight: 600;
+    }
+    &-bold {
+        font-weight: 700;
+    }
+    &-ubold {
+        font-weight: 900;
+    }
+    &-spacing {
+        &-n0 {
+            letter-spacing: 0;
+        }
+        &-n40 {
+            letter-spacing: 0.04em;
+        }
+        &-n120 {
+            letter-spacing: 0.12em;
+        }
+    }
+}

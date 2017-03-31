@@ -1,0 +1,43 @@
+.page {
+  overflow: hidden;
+}
+
+[data-x-mode="design-mode"] .page {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh !important;
+}
+
+/*
+* @section      Page Header
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page header
+*/
+.page-head {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top:0;
+  right:0;
+  /*background-color: #fff;*/
+}
+
+/*
+* @section      Page Content
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page content
+*/
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+* @section      Page Footer
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page footer
+*/
+.page-foot {
+  background-color: #000;
+}
