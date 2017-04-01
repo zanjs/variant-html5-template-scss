@@ -1,0 +1,42 @@
+.rd-megamenu-header{
+    font-size: 14px;
+}
+
+.link-lang{
+    font-size: 13px;
+    color: #196dd7;
+}
+.color-blue{
+    color: #196dd7!important;
+}
+.product-bg{
+    background-color: #f0f0f0;
+}
+
+.bring-bring-index{
+    background-image: url(../imgs/index-bring-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.color-black{
+    color: #000;
+}
+
+.font-size-h1{
+
+    font-size: 22px;
+   
+    @include media(min, 320px){
+        font-size: 22px;
+    }
+    @include media(min, 760px){
+        font-size: 24px;
+    }
+    @include media(min, 910px){
+        font-size: 36px;
+    }
+     @include media(min, 1200px){
+        font-size: 48px;
+    }
+}

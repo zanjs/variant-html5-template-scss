@@ -13,14 +13,12 @@
 .label-custom.label-danger {
     color: #fff;
     background: #fe4a21;
-    -webkit-box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
 }
 
 .label-custom.label-info {
     color: #fff;
     background: #3e9cf6;
-    -webkit-box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,4 +35,35 @@ blockquote q:before, blockquote q:after {
 
 blockquote cite {
     font-style: normal;
+}
+
+
+@media (min-width: 768px) {
+    .sm-width-c6 {
+        width: calc(50vw - 750px / 2 + (750px / 12) * 6);
+    }
+}
+
+@media (min-width: 992px) {
+    .md-width-c7d20 {
+        width: calc(50vw - 970px / 2 + 20px + (970px / 12) * 7);
+    }
+}
+
+@media (min-width: 1200px) {
+    .md-width-c7d20 {
+        width: calc(50vw - 1200px / 2 + 20px + (1200px / 12) * 7);
+    }
+}
+
+@media (min-width: 992px) {
+    .md-width-c5dm20 {
+        width: calc(50vw - 970px / 2 - 20px + (970px / 12) * 5);
+    }
+}
+
+@media (min-width: 1200px) {
+    .md-width-c5dm20 {
+        width: calc(50vw - 1200px / 2 - 20px + (1200px / 12) * 5);
+    }
 }

@@ -1,0 +1,82 @@
+
+.stepper {
+    position: relative;
+    display: inline-block;
+    max-width: 70px;
+    width: 70px;
+    margin-bottom: 0;
+}
+
+.stepper input[type="number"] {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    -moz-appearance: textfield;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.stepper input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.stepper-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    line-height: 21px;
+    font-size: 21px;
+    font-family: 'Material Icons';
+    cursor: pointer;
+    color: #cdcdcd;
+    transition: .3s all ease;
+}
+
+.stepper-arrow:hover {
+    color: #000;
+}
+
+.stepper-arrow.up {
+    right: 0;
+    text-align: left;
+}
+
+.stepper-arrow.up:before {
+    content: '\e147';
+}
+
+.stepper-arrow.down {
+    left: 0;
+    text-align: right;
+}
+
+.stepper-arrow.down:before {
+    content: '\e15c';
+}
+
+.stepper.disabled .stepper-arrow {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.stepper-lg .stepper {
+    width: 90px;
+    max-width: 90px;
+}
+
+.stepper-lg .stepper-arrow {
+    font-size: 24px;
+}
+
+.stepper-lg input[type="number"] {
+    min-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+}

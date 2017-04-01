@@ -1,0 +1,42 @@
+
+.list-blocks {
+    counter-reset: li;
+}
+
+.list-blocks > li {
+    display: block;
+}
+
+.list-blocks .block-list-counter:before {
+    position: relative;
+    content: counter(li, decimal-leading-zero);
+    counter-increment: li;
+    font: 900 24px "Playfair Display", "Times New Roman", Times, serif;
+    line-height: 1;
+    letter-spacing: -.025em;
+    color: #000;
+}
+
+.list-blocks > li + li {
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .list-blocks .block-list-counter:before {
+        top: -2px;
+    }
+}
+
+@media (min-width: 992px) {
+    .list-blocks .block-list-counter:before {
+        top: -4px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-blocks .block-list-counter:before {
+        top: -5px;
+        font-size: 30px;
+    }
+}

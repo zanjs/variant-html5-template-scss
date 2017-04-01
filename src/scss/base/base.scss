@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "adonide_regular";
+  -webkit-text-size-adjust: none;
+  color: #9f9f9f;
+  background-color: #fff;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+input,
+button,
+select,
+textarea {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: .33s all ease-out;
+}
+
+a,
+a:active,
+a:focus {
+  color: #9f9f9f;
+}
+
+a:hover,
+a:focus {
+  // color: #000;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a[href*='callto'],
+a[href*='mailto'] {
+  white-space: nowrap;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid #2a2b2b;
+}
+
+.font-size-default,
+body {
+  font-size: 14px;
+  line-height: 1.71429;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #00030a;
+}
+
+h1>span,
+h2>span,
+h3>span,
+h4>span,
+h5>span,
+h6>span,
+.h1>span,
+.h2>span,
+.h3>span,
+.h4>span,
+.h5>span,
+.h6>span {
+  display: inline-block;
+  font-size: inherit;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a {
+  display: inline;
+  font: inherit;
+  letter-spacing: inherit;
+  transition: .33s all ease;
+}
+
+h1 a,
+h1 a:active,
+h1 a:focus,
+h2 a,
+h2 a:active,
+h2 a:focus,
+h3 a,
+h3 a:active,
+h3 a:focus,
+h4 a,
+h4 a:active,
+h4 a:focus,
+h5 a,
+h5 a:active,
+h5 a:focus,
+h6 a,
+h6 a:active,
+h6 a:focus,
+.h1 a,
+.h1 a:active,
+.h1 a:focus,
+.h2 a,
+.h2 a:active,
+.h2 a:focus,
+.h3 a,
+.h3 a:active,
+.h3 a:focus,
+.h4 a,
+.h4 a:active,
+.h4 a:focus,
+.h5 a,
+.h5 a:active,
+.h5 a:focus,
+.h6 a,
+.h6 a:active,
+.h6 a:focus {
+  color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.h1 a:hover,
+.h2 a:hover,
+.h3 a:hover,
+.h4 a:hover,
+.h5 a:hover,
+.h6 a:hover {
+  color: #000;
+}
+
+h1>*,
+h2>*,
+h3>*,
+h4>*,
+h5>*,
+h6>*,
+.h1>*,
+.h2>*,
+.h3>*,
+.h4>*,
+.h5>*,
+.h6>* {
+  margin-right: .25em;
+}
+
+
+
+address {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+strong {
+    font-weight: 700;
+}
+
+
+.big {
+    letter-spacing: .025em;
+    @include media(min, $Media-mini) {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0;
+    }
+    @include media(min, $Media-pad) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+small,
+.small {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+code {
+    padding: 5px 7px;
+    font-size: 75%;
+    color: #fe4a21;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+}
+
+em {
+    font-size: inherit;
+    font-style: italic;
+    font-weight: 700;
+    line-height: inherit;
+    color: #767877;
+}
+
+mark,
+.mark {
+    color: #fff;
+    background-color: #000;
+    padding: .2em .3em;
+}

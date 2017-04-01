@@ -1,0 +1,16 @@
+.word-break-all {
+    word-break: break-all;
+    /*支持IE，chrome，FF不支持*/
+    word-wrap: break-word;
+    /*支持IE，chrome，FF*/
+}
+
+.text-overflow {
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis;
+}

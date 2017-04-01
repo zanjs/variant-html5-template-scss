@@ -1,0 +1,96 @@
+.page-loader-variant-1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  z-index: 9999999;
+  background: #f5f5f5;
+  transition: .3s all ease;
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+  &.ending {
+    display: none;
+  }
+  .page-loader-body {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+[data-x-mode="design-mode"] .page-loader-variant-1 {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+#spinningSquaresG {
+  position: relative;
+  width: 150px;
+  height: 18px;
+  margin: auto;
+}
+
+.spinningSquaresG {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  animation-name: bounce_spinningSquaresG;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  transform: scale(0.3);
+  &_1 {
+    left: 0;
+    animation-delay: 0.6s;
+  }
+  &_2 {
+    left: 19px;
+    animation-delay: 0.75s;
+  }
+  &_3 {
+    left: 37px;
+    animation-delay: 0.9s;
+  }
+  &_4 {
+    left: 56px;
+    animation-delay: 1.05s;
+  }
+  &_5 {
+    left: 75px;
+    animation-delay: 1.2s;
+  }
+  &_6 {
+    left: 94px;
+    animation-delay: 1.35s;
+  }
+  &_7 {
+    left: 112px;
+    animation-delay: 1.5s;
+  }
+  &_8 {
+    left: 131px;
+    animation-delay: 1.64s;
+  }
+}
+
+@keyframes bounce_spinningSquaresG {
+  0% {
+    transform: scale(1);
+    background-color: white;
+  }
+  100% {
+    transform: scale(0.3) rotate(90deg);
+    background-color: black;
+  }
+}

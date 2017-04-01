@@ -1,0 +1,127 @@
+
+/**
+ *	This element is created inside your target element
+ *	It is used so that your own element will not need to be altered
+ **/
+.time_circles {
+    position: relative;
+    width: 100%;
+}
+
+/**
+ *	This is all the elements used to house all text used
+ * in time circles
+ **/
+.time_circles > div {
+    position: absolute;
+    text-align: center;
+    top: 50% !important;
+    transform: translateY(-63%) !important;
+    -webkit-transform: translateY(-63%) !important;
+}
+
+@media (min-width: 1200px) {
+    #DateCountdown {
+        width: 100%;
+    }
+}
+
+/**
+ *	Titles (Days, Hours, etc)
+ **/
+.time_circles > div > h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    color: #2a2b2b;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    right: 0;
+}
+
+.time_circles > div > h4 + * {
+    margin-top: 0;
+}
+
+/**
+ *	Time numbers, ie: 12
+ **/
+.time_circles > div > span {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .time_circles > div > span {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .time_circles > div > span {
+        font-size: 36px;
+    }
+}
+
+.countdown-wrap {
+    max-width: 720px;
+}
+
+.countdown-wrap .time_circles > div {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.countdown-wrap div > h4 {
+    position: relative;
+    margin-top: 5px;
+    color: #cdcdcd;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    bottom: auto !important;
+}
+
+@media (min-width: 480px) {
+    .countdown-wrap div > h4 {
+        font-size: 14px !important;
+    }
+}
+
+.countdown-wrap span {
+    font: 900 26px "Playfair Display", "Times New Roman", Times, serif !important;
+    font-style: normal;
+    color: #000;
+}
+
+@media (min-width: 480px) {
+    .countdown-wrap span {
+        font-size: 40px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .countdown-wrap span {
+        font-size: 60px !important;
+        line-height: 1;
+    }
+}

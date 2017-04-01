@@ -1,0 +1,78 @@
+
+
+.shop-panel {
+    padding: 20px 0;
+    background: #dedede;
+}
+
+.shop-panel-list {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    word-spacing: 0;
+    vertical-align: middle;
+}
+
+.shop-panel-list li {
+    position: relative;
+    display: inline-block;
+    min-width: 44px;
+    height: 44px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: middle;
+    transition: .33s;
+}
+
+.shop-panel-list li:after,
+.shop-panel-list li .icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shop-panel-list li:after {
+    content: '';
+    height: 100%;
+    width: 0;
+}
+
+.shop-panel-list li .icon {
+    width: auto;
+}
+
+.shop-panel-list li .icon, .shop-panel-list li .icon:active, .shop-panel-list li .icon:focus {
+    color: #9f9f9f;
+}
+
+.shop-panel-list li .icon:hover {
+    color: #000;
+}
+
+.shop-panel-list li.active {
+    pointer-events: none;
+    border-color: #000;
+}
+
+.shop-panel-list li.active .icon {
+    color: #000;
+}
+
+.shop-panel-controls {
+    vertical-align: baseline;
+    color: #00030a;
+}
+
+.shop-panel-controls > * {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.shop-panel-controls > *:not(:last-child) {
+    margin-right: .5em;
+}
+
+.shop-panel-controls .select2 {
+    position: relative;
+    top: -2px;
+}

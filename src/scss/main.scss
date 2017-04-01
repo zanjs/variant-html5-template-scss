@@ -1,135 +1,100 @@
+// function
 @import "media";
 @import "const";
 
-    @import "./ui/min.scss";
-
-    
-
-    @import "./ui/loader.scss";
-
-    @import "./ui/visible.scss";
-
-    @import "./ui/Toolkit.scss";
-
-    @import "./ui/o1.scss";
-    @import "./ui/h1.scss";
-
-    @import "./ui/btn.scss";
-    
-    @import "./ui/text.scss";
-
-    @import "./ui/page.scss";
-
-    @import "./ui/fa.scss";
-
-    @import "./ui/material.scss";
-
-    @import "./ui/fl-flat.scss";
-
-    @import "./ui/thumbnail.scss";
-
-    @import "./ui/form.scss";
-
-    @import "./ui/unit.scss";
-
-    @import "./ui/o2.scss";
-
-    @import "./ui/pagination.scss";
-
-    @import "./ui/o3.scss";
-
-    @import "./ui/quote.scss";
-
-    @import "./ui/icon-box.scss";
-
-    @import "./ui/list-blocks.scss";
-
-    @import "./ui/block-image.scss";
-
-    @import "./ui/block-vacation.scss";
-
-    @import "./ui/block-shadow.scss";
-
-    @import "./ui/box-counter.scss";
-
-    @import "./ui/post.scss";
-
-    @import "./ui/comment.scss";
-
-    @import "./ui/page-title.scss";
-
-    @import "./ui/pricing.scss";
-
-    @import "./ui/shop.scss";
-
-    @import "./ui/product.scss";
-
-    @import "./ui/one-screen.scss";
-
-    @import "./ui/inset.scss";
-
-    @import "./ui/offset.scss";
-
-    @import "./ui/shift.scss";
-
-    @import "./ui/link.scss";
-
-    @import "./ui/list.scss";
-
-    @import "./ui/object.scss";
-
-    @import "./ui/o4.scss";
-
-    @import "./ui/bg.scss";
-
-    @import "./ui/image-group.scss";
-
-    @import "./ui/divider.scss";
-
-    @import "./ui/tabs.scss";
-
-    @import "./ui/panel.scss";
-
-    @import "./ui/animate.scss";
-
-    @import "./ui/countdown.scss";
-
-    @import "./ui/isotope.scss";
-
-    @import "./ui/owl.scss";
-
-    @import "./ui/navbar.scss";
-
-    @import "./ui/parallax.scss";
-
-    @import "./ui/google.scss";
-
-    @import "./ui/search.scss";
-
-    @import "./ui/twitter.scss";
-
-    @import "./ui/swiper.scss";
-
-    @import "./ui/totop.scss";
-
-    @import "./ui/progress.scss";
-
-    @import "./ui/time.scss";
-
-    @import "./ui/slick.scss";
-
-    @import "./ui/stepper.scss";
-
-    @import "./ui/dtp.scss";
-
-    @import "./ui/pswp.scss";
-
-    @import "./ui/select2.scss";
-
-    @import "./ui/mfp.scss";
-
-    @import "./ui/style.scss";
-
-    @import "./ui/app.scss";
-
-    
+// libs
+@import "./libs/min.scss";
+@import "./libs/animate.scss";
+@import "./libs/material.scss";
+@import "./libs/fa.scss";
+@import "./libs/google.scss";
+@import "./libs/owl.scss";
+@import "./libs/swiper.scss";
+@import "./libs/fl-flat.scss";
+@import "./libs/select2.scss";
+@import "./libs/Toolkit.scss";
+@import "./libs/parallax.scss";
+@import "./libs/totop.scss";
+
+// layouts
+@import "./layouts/offset.scss";
+@import "./layouts/inset.scss";
+@import "./layouts/visible.scss";
+@import "./layouts/unit.scss";
+@import "./layouts/flex.scss";
+
+// base ui
+@import "./base/loader.scss";
+@import "./base/navbar.scss";
+@import "./base/pagination.scss";
+@import "./base/search.scss";
+@import "./base/image-group.scss";
+@import "./base/thumbnail.scss";
+@import "./base/base.scss";
+
+// fonts
+@import "./fonts/h1.scss";
+
+
+// form
+@import "./form/btn.scss";
+@import "./form/form.scss";
+
+// text
+@import "./text/text.scss";
+@import "./text/word.scss";
+
+// module
+@import "./module/page.scss";
+@import "./module/comment.scss";
+@import "./module/post.scss";
+@import "./module/shop.scss";
+@import "./module/product.scss";
+@import "./module/one-screen.scss";
+
+// master
+
+// ui
+@import "./ui/o1.scss";
+@import "./ui/o2.scss";
+@import "./ui/o3.scss";
+@import "./ui/icon-box.scss";
+@import "./ui/block-image.scss";
+@import "./ui/block-vacation.scss";
+@import "./ui/block-shadow.scss";
+@import "./ui/link.scss";
+@import "./ui/bg.scss";
+
+// list
+@import "./list/list.scss";
+@import "./list/list-blocks.scss";
+
+
+// tabs
+@import "./tab/tabs.scss";
+@import "./tab/isotope.scss";
+@import "./tab/panel.scss";
+@import "./tab/slick.scss";
+@import "./tab/pricing.scss";
+@import "./tab/stepper.scss";
+@import "./tab/time.scss";
+@import "./tab/progress.scss";
+@import "./tab/quote.scss";
+
+// mend
+@import "./mend/end.scss";
+@import "./mend/mend.scss";
+
+// other
+@import "./other/shift.scss";
+@import "./other/object.scss";
+@import "./other/box-counter.scss";
+@import "./other/divider.scss";
+@import "./other/dtp.scss";
+@import "./other/style.scss";
+@import "./other/mfp.scss";
+@import "./other/pswp.scss";
+@import "./other/countdown.scss";
+
+// third
+@import "./third/twitter.scss";

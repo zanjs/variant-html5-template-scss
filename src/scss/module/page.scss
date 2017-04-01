@@ -1,0 +1,145 @@
+.page {
+  overflow: hidden;
+}
+
+[data-x-mode="design-mode"] .page {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh !important;
+}
+
+/*
+* @section      Page Header
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page header
+*/
+.page-head {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top:0;
+  right:0;
+  /*background-color: #fff;*/
+}
+
+/*
+* @section      Page Content
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page content
+*/
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+* @section      Page Footer
+* @description  This section holds specific style redeclarations for some
+*               of common elements in page footer
+*/
+.page-foot {
+  background-color: #000;
+}
+
+
+
+
+.page-title {
+    text-align: center;
+}
+
+.page-title > * {
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.page-title .page-title-inner {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title .page-title-left,
+.page-title .page-title-right {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.page-title .page-title-left *,
+.page-title .page-title-right * {
+    display: inline;
+    white-space: nowrap;
+}
+
+.page-title .page-title-left {
+    left: 0;
+    text-align: right;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+}
+
+.page-title .page-title-left * {
+    padding-right: .25em;
+}
+
+.page-title .page-title-left *:nth-last-child(odd) {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.page-title .page-title-left *:nth-last-child(even) {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.page-title .page-title-right {
+    right: 0;
+    text-align: left;
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+}
+
+.page-title .page-title-right * {
+    padding-left: .25em;
+}
+
+.page-title .page-title-right *:nth-child(odd) {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.page-title .page-title-right *:nth-child(even) {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.page-title-wrap {
+    background: #000;
+    // background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center 80%;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        text-align: left;
+    }
+}
+
+
+.page-about-title{
+    // position: absolute;
+    // right: 0;
+    color: #fffefe;
+    font-size: 72px;
+}
+
+.page-title-wrap{
+    .shell-wrap{
+        right: 0;
+        left: 0;
+        bottom: 0;
+        // background-color: red;
+    }
+}

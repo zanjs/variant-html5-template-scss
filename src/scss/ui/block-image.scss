@@ -1,102 +1,73 @@
-
-
 .block-image-plate {
     display: block;
     width: 100%;
-}
-
-.block-image-plate .block-header {
-    max-width: 400px;
-}
-
-.block-image-plate .block-inner {
-    position: relative;
-    padding: 45px 30px;
-}
-
-.block-image-plate .block-inner:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.block-image-plate .block-inner > * {
-    position: relative;
-    z-index: 2;
-}
-
-.block-image-plate * + .block-text {
-    margin-top: 18px;
-}
-
-.block-image-plate * + .block-body {
-    margin-top: 12px;
-}
-
-@media (max-width: 767px) {
-    .block-image-plate {
+    @include media(min, $Media-pad) {
         margin-left: -16px;
         margin-right: -15px;
         width: calc(100% + 32px);
     }
-}
-
-@media (min-width: 768px) {
-    .block-image-plate .block-header {
-        max-width: 340px;
+    .block {
+        &-header {
+            max-width: 400px;
+            @include media(min, $Media-pad) {
+                max-width: 340px;
+            }
+            @include media(min, $Media-pc) {
+                max-width: 400px;
+            }
+        }
+        &-inner {
+            position: relative;
+            padding: 45px 30px;
+            @include media(min, $Media-pad) {
+                padding: 60px 12.5% 60px 8.33333%;
+            }
+            @include media(min, $Media-pc) {
+                padding-right: 16.66667%;
+                padding-top: 90px;
+                padding-bottom: 95px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+                background: rgba(0, 0, 0, 0.7);
+            }
+            >* {
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &-body {
+            @include media(min, $Media-pad) {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                justify-content: center;
+                flex-grow: 1;
+            }
+        }
+        &-left {
+            @include media(min, $Media-pad) {
+                flex-shrink: 0;
+                flex-basis: 11.11111%;
+                max-width: 11.11111%;
+                max-width: 100px;
+            }
+        }
     }
-    .block-image-plate .block-inner {
-        padding: 60px 12.5% 60px 8.33333%;
+    *+.block-text {
+        margin-top: 18px;
+        @include media(min, $Media-pad) {
+            margin-top: 0;
+        }
     }
-    .block-image-plate .block-body {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .block-image-plate .block-left {
-        -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        -webkit-flex-basis: 11.11111%;
-        -ms-flex-preferred-size: 11.11111%;
-        flex-basis: 11.11111%;
-        max-width: 11.11111%;
-        max-width: 100px;
-    }
-    .block-image-plate .block-body {
-        -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-    }
-    .block-image-plate * + .block-text {
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .block-image-plate .block-header {
-        max-width: 400px;
-    }
-    .block-image-plate .block-inner {
-        padding-right: 16.66667%;
-        padding-top: 90px;
-        padding-bottom: 95px;
+    *+.block-body {
+        margin-top: 12px;
     }
 }
