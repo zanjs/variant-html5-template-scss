@@ -752,8 +752,8 @@ $document.ready(function () {
                 $window.trigger("resize");
 
                 setTimeout(function(){
-                    plugins.pageLoader.addClass("loaded");
-                },1000)
+                    plugins.pageLoader.remove()
+                },800)
             }, 200);
         });
     }
