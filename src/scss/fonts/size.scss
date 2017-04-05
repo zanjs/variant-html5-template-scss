@@ -1,5 +1,22 @@
 .font-size{
+    &-n18{
+        font-size: 18px;
+    }
+    &-n20{
+        font-size: 20px;
+    }
     &-n23{
         font-size: 24px;
     }
+    &-n30{
+        font-size: 30px;
+    }
+}
+
+.font-n16 {
+  font-size: 16px;
+}
+
+.font-n24 {
+  font-size: 24px;
 }
