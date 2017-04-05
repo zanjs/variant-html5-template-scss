@@ -1,0 +1,16 @@
+.hover {
+    transition: .33s all ease-in-out;
+
+    &-x {
+        &-n5 {
+            &:hover {
+                transform: translateX(-5px)
+            }
+        }
+        &-n10 {
+            &:hover {
+                transform: translateX(-10px)
+            }
+        }
+    }
+}

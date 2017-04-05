@@ -22,6 +22,7 @@
 @import "./layouts/visible.scss";
 @import "./layouts/unit.scss";
 @import "./layouts/flex.scss";
+@import "./layouts/padding.scss";
 
 // base ui
 @import "./base/loader.scss";
@@ -31,9 +32,12 @@
 @import "./base/image-group.scss";
 @import "./base/thumbnail.scss";
 @import "./base/base.scss";
+@import "./base/hover.scss";
 
 // fonts
 @import "./fonts/h1.scss";
+@import "./fonts/color.scss";
+@import "./fonts/size.scss";
 
 
 // form

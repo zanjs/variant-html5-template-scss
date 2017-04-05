@@ -87,6 +87,7 @@ gulp.task('dev', ['sass'], () => {
     gulp.watch(`./src/scss/**/*.scss`, ['sass'])
     gulp.watch(`./src/templates/**/*.ejs`, ['ejs'])
     gulp.watch(`./src/templates/*.ejs`, ['ejs'])
+    gulp.watch(`./src/js/*.js`, ['scripts'])
 
 })
 

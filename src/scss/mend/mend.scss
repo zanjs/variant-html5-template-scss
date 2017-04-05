@@ -23,7 +23,7 @@
     border-radius: 100%;
     top: 20px;
     right: 40px;
-    background-color: #196dd7;
+    background-color: $match-colors;
     z-index: 999;
     color: #FFF;
 }
@@ -36,8 +36,8 @@
 
 .btn-blue-ma{
     color: #fff;
-    background-color: #196dd7;
-    border-color: #196dd7;
+    background-color: $match-colors;
+    border-color: $match-colors;
 }
 
 .btn-blue-ma:hover{
@@ -55,12 +55,12 @@
 .find-us{
     position: relative;
     transform: translateY(-23px);
-    color: #196dd7;
+    color: $match-colors;
 }
 
 .find-us .fa{
 
-    color: #196dd7;
+    color: $match-colors;
 }
 
 .find-us:hover{
@@ -138,7 +138,7 @@
 }
 
 .product-paging{
-    background-color: #196dd7;
+    background-color: $match-colors;
 }
 
 .product-paging a{
@@ -149,7 +149,7 @@
 }
 
 .news-paging{
-    /*background-color: #196dd7;*/
+    /*background-color: $match-colors;*/
 }
 
 .news-paging a{
@@ -282,7 +282,7 @@
     display: inline-block;
     border-radius: 100%;
     margin-top: -60px;
-    background-color: #196dd7;
+    background-color: $match-colors;
     color: #FFF;
     width: 120px;
     height: 120px;
@@ -392,7 +392,7 @@
 .down-btn{
     display: inline-block;
     padding: 5px 12px;
-    background-color: #196dd7;
+    background-color: $match-colors;
     color: #FFF;
     border-radius: 16px;
 }

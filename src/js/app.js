@@ -746,8 +746,14 @@ $document.ready(function () {
     if (plugins.pageLoader.length > 0) {
         $window.on("load", function () {
             var loader = setTimeout(function () {
-                plugins.pageLoader.addClass("loaded");
+                plugins.pageLoader.addClass('animated zoomOut')
+                // .addClass("loaded");
+                // plugins.pageLoader.addClass("loaded");
                 $window.trigger("resize");
+
+                setTimeout(function(){
+                    plugins.pageLoader.addClass("loaded");
+                },1000)
             }, 200);
         });
     }

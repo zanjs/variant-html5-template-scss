@@ -39,58 +39,81 @@
   margin: auto;
 }
 
-.spinningSquaresG {
-  position: absolute;
-  top: 0;
-  background-color: white;
-  width: 18px;
-  height: 18px;
-  animation-name: bounce_spinningSquaresG;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  transform: scale(0.3);
-  &_1 {
-    left: 0;
-    animation-delay: 0.6s;
+.load-bar {
+  float: left;
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.load-line .load-bar {
+  animation: loadingJ 2s cubic-bezier(.17, .37, .43, .67) infinite;
+}
+
+@keyframes loadingJ {
+  0%,
+  100% {
+    transform: translate(0, 0);
   }
-  &_2 {
-    left: 19px;
-    animation-delay: 0.75s;
-  }
-  &_3 {
-    left: 37px;
-    animation-delay: 0.9s;
-  }
-  &_4 {
-    left: 56px;
-    animation-delay: 1.05s;
-  }
-  &_5 {
-    left: 75px;
-    animation-delay: 1.2s;
-  }
-  &_6 {
-    left: 94px;
-    animation-delay: 1.35s;
-  }
-  &_7 {
-    left: 112px;
-    animation-delay: 1.5s;
-  }
-  &_8 {
-    left: 131px;
-    animation-delay: 1.64s;
+  50% {
+    transform: translate(100px, 0);
+    background-color: $match-colors;
+    width: 36px;
   }
 }
 
-@keyframes bounce_spinningSquaresG {
-  0% {
-    transform: scale(1);
-    background-color: white;
-  }
-  100% {
-    transform: scale(0.3) rotate(90deg);
-    background-color: black;
-  }
-}
+// .spinningSquaresG {
+//   position: absolute;
+//   top: 0;
+//   background-color: white;
+//   width: 18px;
+//   height: 18px;
+//   animation-name: bounce_spinningSquaresG;
+//   animation-duration: 1.5s;
+//   animation-iteration-count: infinite;
+//   animation-direction: normal;
+//   transform: scale(0.3);
+//   &_1 {
+//     left: 0;
+//     animation-delay: 0.6s;
+//   }
+//   &_2 {
+//     left: 19px;
+//     animation-delay: 0.75s;
+//   }
+//   &_3 {
+//     left: 37px;
+//     animation-delay: 0.9s;
+//   }
+//   &_4 {
+//     left: 56px;
+//     animation-delay: 1.05s;
+//   }
+//   &_5 {
+//     left: 75px;
+//     animation-delay: 1.2s;
+//   }
+//   &_6 {
+//     left: 94px;
+//     animation-delay: 1.35s;
+//   }
+//   &_7 {
+//     left: 112px;
+//     animation-delay: 1.5s;
+//   }
+//   &_8 {
+//     left: 131px;
+//     animation-delay: 1.64s;
+//   }
+// }
+// @keyframes bounce_spinningSquaresG {
+//   0% {
+//     transform: scale(1);
+//     background-color: white;
+//   }
+//   100% {
+//     transform: scale(0.3) rotate(90deg);
+//     background-color: black;
+//   }
+// }

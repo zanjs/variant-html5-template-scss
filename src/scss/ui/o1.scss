@@ -1,5 +1,3 @@
-
-
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -26,8 +24,6 @@
   border-radius: 50%;
 }
 
-
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -39,14 +35,15 @@
   border: 0;
 }
 
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
+.sr-only-focusable {
+  &:active, &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
 }
 
 [role="button"] {
@@ -59,20 +56,17 @@
     @affected: IE Edge
   */
   transition: none !important;
-}
-
-.brand,
-.brand:active,
-.brand:focus,
-.brand:hover {
   fill: #000;
+  &:active, &:focus, &:hover {
+    fill: #000;
+  }
 }
 
-.brand-inverse,
-.brand-inverse:active,
-.brand-inverse:focus,
-.brand-inverse:hover {
+.brand-inverse {
   fill: #fff;
+  &:active, &:focus, &:hover {
+    fill: #fff;
+  }
 }
 
 .brand-md img {
@@ -86,11 +80,10 @@
   line-height: 1.5;
   letter-spacing: .025em;
   vertical-align: baseline;
-}
-
-.rights * {
-  display: inline;
-  margin-right: .25em;
+  * {
+    display: inline;
+    margin-right: .25em;
+  }
 }
 
 .page-foot-default .rights {
@@ -102,20 +95,18 @@
   margin-top: 30px;
 }
 
-
 .icon {
   display: inline-block;
   text-align: center;
-}
-
-.icon:before {
-  display: inline-block;
-  font-weight: 400;
-  font-style: normal;
-  speak: none;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  &:before {
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 [class*='icon-circle'] {
@@ -132,11 +123,7 @@
   color: #9f9f9f;
 }
 
-.icon-gray-base {
-  color: #000;
-}
-
-.icon-primary {
+.icon-gray-base, .icon-primary {
   color: #000;
 }
 
@@ -161,57 +148,59 @@
 .icon-white {
   color: #fff;
 }
-a.icon-default,
-a.icon-default:active,
-a.icon-default:focus {
-  color: #9f9f9f;
-}
 
-a.icon-default:hover {
-  color: #000;
-}
-
-a.icon-primary,
-a.icon-primary:active,
-a.icon-primary:focus {
-  color: #000;
-}
-
-a.icon-primary:hover {
-  color: #fff;
-}
-a.icon-tundora-inverse,
-a.icon-tundora-inverse:active,
-a.icon-tundora-inverse:focus {
-  color: #414141;
-}
-
-a.icon-tundora-inverse:hover {
-  color: #fff;
-}
-
-a.icon-gray-dark-filled,
-a.icon-gray-dark-filled:active,
-a.icon-gray-dark-filled:focus {
-  color: #7b7b7b;
-  /*background: #2a2b2b;*/
-}
-
-a.icon-gray-dark-filled:hover {
-  color: #fff;
-  background: #000;
-}
-
-a.icon-silver-chalice-filled,
-a.icon-silver-chalice-filled:active,
-a.icon-silver-chalice-filled:focus {
-  color: #fff;
-  background: #ababab;
-}
-
-a.icon-silver-chalice-filled:hover {
-  color: #fff;
-  background: #000;
+a {
+  &.icon-default {
+    color: #9f9f9f;
+    &:active, &:focus {
+      color: #9f9f9f;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+  &.icon-primary {
+    color: #000;
+    &:active, &:focus {
+      color: #000;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  &.icon-tundora-inverse {
+    color: #414141;
+    &:active, &:focus {
+      color: #414141;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  &.icon-gray-dark-filled {
+    color: #7b7b7b;
+    /*background: #2a2b2b;*/
+    &:active, &:focus {
+      color: #7b7b7b;
+      /*background: #2a2b2b;*/
+    }
+    &:hover {
+      color: #fff;
+      background: #000;
+    }
+  }
+  &.icon-silver-chalice-filled {
+    color: #fff;
+    background: #ababab;
+    &:active, &:focus {
+      color: #fff;
+      background: #ababab;
+    }
+    &:hover {
+      color: #fff;
+      background: #000;
+    }
+  }
 }
 
 .icon-xxs {
@@ -256,14 +245,7 @@ a.icon-silver-chalice-filled:hover {
   line-height: 20px;
 }
 
-.icon-sm {
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.icon-sm-custom {
+.icon-sm, .icon-sm-custom {
   width: 24px;
   height: 24px;
   font-size: 24px;
@@ -344,19 +326,13 @@ a.icon-silver-chalice-filled:hover {
   line-height: 60px;
 }
 
-[class*='icon-round'].icon-xxs-smallest,
-[class*='icon-circle'].icon-xxs-smallest {
+[class*='icon-round'].icon-xxs-smallest, [class*='icon-circle'].icon-xxs-smallest {
   width: 26px;
   height: 26px;
   line-height: 26px;
 }
 
-.icon-shift-1 {
-  position: relative;
-  top: 2px;
-}
-
-.icon-shift-2 {
+.icon-shift-1, .icon-shift-2 {
   position: relative;
   top: 2px;
 }

@@ -1,0 +1,39 @@
+.padding {
+    &-n0 {
+        padding: 0;
+    }
+    &-n10 {
+        padding: 10px;
+    }
+    &-n20 {
+        padding: 20px;
+    }
+}
+
+@media (min-width: $Media-mini) {
+    .padding-xs {
+        &-n0 {
+            padding: 0;
+        }
+        &-n10 {
+            padding: 10px;
+        }
+        &-n20 {
+            padding: 20px;
+        }
+    }
+}
+
+@media (min-width: $Media-pad) {
+    .padding-sm {
+        &-n0 {
+            padding: 0;
+        }
+        &-n10 {
+            padding: 10px;
+        }
+        &-n20 {
+            padding: 20px;
+        }
+    }
+}
