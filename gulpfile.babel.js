@@ -19,8 +19,10 @@ import gutil        from 'gulp-util'
 
 
 const cssLoadSrc = './src/scss/main.scss'
+const loadingSrc = './src/scss/loading.scss'
 const jsLoadSrc = ["./src/js/core.js","./src/js/app.js"]
 const mincss = 'app.css'
+const loadingName = 'loading.css'
 const minjs = 'app.js'
 const ejsSrc = './src/templates/*.ejs'
 
@@ -54,6 +56,22 @@ gulp.task('sass', () => gulp.src(cssLoadSrc)
     .pipe(notify({ message: 'Styles  task complete' })))
 
 
+gulp.task('loading', () => gulp.src(loadingSrc)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(`./.tmp`))
+    .pipe(autoprefixer({
+        browsers: ['> 5%','Firefox <= 20','ie 9'],
+        cascade: false
+    }))
+    .pipe(rename(loadingName))
+    .pipe(gulp.dest(`./.tmp`))
+    .pipe(minifycss())
+    .pipe(header(banner, { pkg }))
+    .pipe(gulp.dest(`./build/css/`))
+    .pipe(reload({ stream: true }))
+    .pipe(notify({ message: 'Styles  task complete' })))
+
+
 gulp.task('scripts', () => gulp.src(jsLoadSrc)
     .pipe(concat(minjs))
     .pipe(gulp.dest(`./.tmp/js`))
@@ -74,7 +92,7 @@ gulp.task('ejs', () => gulp.src(ejsSrc)
     )
 
 // 静态服务器 + 监听 scss/html 文件
-gulp.task('dev', ['sass'], () => {
+gulp.task('dev', ['sass','loading'], () => {
 
     browserSync.init({
         server: `./build/`
@@ -83,8 +101,8 @@ gulp.task('dev', ['sass'], () => {
      // 看守所有.html
     gulp.watch(`./build/*.html`).on('change', reload)
     // 看守.scss 档
-    gulp.watch(`./src/scss/*.scss`, ['sass'])
-    gulp.watch(`./src/scss/**/*.scss`, ['sass'])
+    gulp.watch(`./src/scss/*.scss`, ['sass','loading'])
+    gulp.watch(`./src/scss/**/*.scss`, ['sass','loading'])
     gulp.watch(`./src/templates/**/*.ejs`, ['ejs'])
     gulp.watch(`./src/templates/*.ejs`, ['ejs'])
     gulp.watch(`./src/js/*.js`, ['scripts'])

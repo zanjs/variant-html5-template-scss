@@ -25,7 +25,7 @@
 @import "./layouts/padding.scss";
 
 // base ui
-@import "./base/loader.scss";
+// @import "./base/loader.scss";
 @import "./base/navbar.scss";
 @import "./base/pagination.scss";
 @import "./base/search.scss";
@@ -50,11 +50,11 @@
 
 // module
 @import "./module/page.scss";
-@import "./module/comment.scss";
+// @import "./module/comment.scss";
 @import "./module/post.scss";
-@import "./module/shop.scss";
+// @import "./module/shop.scss";
 @import "./module/product.scss";
-@import "./module/one-screen.scss";
+// @import "./module/one-screen.scss";
 
 // master
 
@@ -75,30 +75,30 @@
 
 
 // tabs
-@import "./tab/tabs.scss";
+// @import "./tab/tabs.scss";
 @import "./tab/isotope.scss";
-@import "./tab/panel.scss";
-@import "./tab/slick.scss";
-@import "./tab/pricing.scss";
-@import "./tab/stepper.scss";
-@import "./tab/time.scss";
-@import "./tab/progress.scss";
-@import "./tab/quote.scss";
+// @import "./tab/panel.scss";
+// @import "./tab/slick.scss";
+// @import "./tab/pricing.scss";
+// @import "./tab/stepper.scss";
+// @import "./tab/time.scss";
+// @import "./tab/progress.scss";
+// @import "./tab/quote.scss";
 
 // mend
 @import "./mend/end.scss";
 @import "./mend/mend.scss";
 
 // other
-@import "./other/shift.scss";
-@import "./other/object.scss";
-@import "./other/box-counter.scss";
-@import "./other/divider.scss";
-@import "./other/dtp.scss";
-@import "./other/style.scss";
-@import "./other/mfp.scss";
-@import "./other/pswp.scss";
-@import "./other/countdown.scss";
+// @import "./other/shift.scss";
+// @import "./other/object.scss";
+// @import "./other/box-counter.scss";
+// @import "./other/divider.scss";
+// @import "./other/dtp.scss";
+// @import "./other/style.scss";
+// @import "./other/mfp.scss";
+// @import "./other/pswp.scss";
+// @import "./other/countdown.scss";
 
 // third
-@import "./third/twitter.scss";
+// @import "./third/twitter.scss";
