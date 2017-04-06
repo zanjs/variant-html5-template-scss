@@ -42,7 +42,7 @@ gulp.task('sass', () => gulp.src(cssLoadSrc)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(`./.tmp`))
     .pipe(autoprefixer({
-        browsers: ['> 1%','Firefox <= 20',''],
+        browsers: ['> 5%','Firefox <= 20','ie 9'],
         cascade: false
     }))
     .pipe(rename(mincss))
