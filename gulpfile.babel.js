@@ -20,7 +20,55 @@ import gutil        from 'gulp-util'
 
 const cssLoadSrc = './src/scss/main.scss'
 const loadingSrc = './src/scss/loading.scss'
-const jsLoadSrc = ["./src/js/core.js","./src/js/app.js"]
+
+const libJs = [
+                "./src/libs/jq.js",
+                "./src/libs/Cookie.js",
+                "./src/libs/migrate.js",
+                "./src/libs/Device.js",
+                "./src/libs/resize.js",
+                "./src/libs/easing.js",
+                "./src/libs/TouchSwipe.js",
+                "./src/libs/form-validation.js",
+                "./src/libs/Form.js",
+                "./src/libs/Count.js",
+                "./src/libs/Swiper.js",
+                "./src/libs/Parallax.js",
+                "./src/libs/WOW.js",
+                "./src/libs/Owl.js",
+                "./src/libs/Isotope.js",
+                "./src/libs/PhotoSwipe.js",
+                "./src/libs/Navbar.js",
+                "./src/libs/Twitter.js",
+                "./src/libs/Waypoints.js",
+                "./src/libs/UIToTop.js",
+                "./src/libs/ScrollTo.js",
+                "./src/libs/Bootstrap.js",
+                "./src/libs/RDInputLabel.js",
+                "./src/libs/Select2.js",
+                "./src/libs/google-map.js",
+                "./src/libs/Stepper.js",
+                "./src/libs/Abstract.js",
+                "./src/libs/Countdown.js",
+                "./src/libs/Moment.js",
+                "./src/libs/Datetimepicker.js",
+                "./src/libs/TimeCircles.js",
+                "./src/libs/Slick.js",
+                "./src/libs/ProgressBar.js",
+                "./src/libs/click-events.js",
+                "./src/libs/Hammer.js",
+                "./src/libs/Bridget.js",
+                "./src/libs/mag.js",
+                "./src/libs/mag-jquery.js",
+                "./src/libs/Magnific.js",    
+            ]
+
+const appjs = ["./src/js/func.js","./src/js/core.js","./src/js/app.js"]
+
+const jsLoadSrc = libJs.concat(appjs)
+
+console.log(jsLoadSrc)
+
 const mincss = 'app.css'
 const loadingName = 'loading.css'
 const minjs = 'app.js'

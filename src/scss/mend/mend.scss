@@ -390,3 +390,13 @@
 .isotope a {
   max-width: 100%;
 }
+
+.disabled{
+  &.owl-nav{
+
+    div{
+      display: none;
+    }
+
+  }
+}
